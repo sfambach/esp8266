@@ -1,5 +1,12 @@
-#include <ESP8266WiFi.h>
-#include <ESP8266mDNS.h>
+
+#ifdef ESP8266
+  #include <ESP8266WiFi.h>
+  #include <ESP8266mDNS.h>
+#elif defined ESP32  
+  #include <WiFi.h>
+  #include <mDNS.h>
+#endif
+
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 
@@ -12,7 +19,7 @@ const char* ssid = STASSID;
 const char* password = STAPSK;
 
 void setup() {
-  Serial.begin(74880);
+  Serial.begin(115200);
   Serial.println("Booting");
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
