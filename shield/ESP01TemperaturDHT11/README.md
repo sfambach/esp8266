@@ -2,8 +2,8 @@
 
 
 ## Images
-![Board Front](./img/ESP01_DHT11Board_Front.jpg)
-![Board Bottom](./img/ESP01_DHT11Board_Backt.jpg)
+<img src="./img/ESP01_DHT11Board_Front.jpg" width="100">
+<img src="./img/ESP01_DHT11Board_Backt.jpg) width="100">
 
 
 ## Libs
