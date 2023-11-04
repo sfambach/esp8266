@@ -2,8 +2,8 @@
 
 
 ## Images
-<img src="./img/ESP01_DHT11Board_Front.jpg" width="100">
-<img src="./img/ESP01_DHT11Board_Backt.jpg) width="100">
+<img src="./img/ESP01_DHT11Board_Front.jpg" width="300">
+<img src="./img/ESP01_DHT11Board_Backt.jpg" width="300">
 
 
 ## Libs
