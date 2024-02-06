@@ -1,3 +1,15 @@
 [submodule "src/WiFiManager/lib/WiFiManager"]
 	path = src/WiFiManager/lib/WiFiManager
 	url = https://github.com/tzapu/WiFiManager.git
+[submodule "boards/AZSMZ_TFT_24/src/WU-esp8266-weather-station-color/lib/minigrafx"]
+	path = boards/AZSMZ_TFT_24/src/WU-esp8266-weather-station-color/lib/minigrafx
+	url = https://github.com/ThingPulse/minigrafx.git
+[submodule "boards/AZSMZ_TFT_24/src/WU-esp8266-weather-station-color/lib/json-streaming-parser"]
+	path = boards/AZSMZ_TFT_24/src/WU-esp8266-weather-station-color/lib/json-streaming-parser
+	url = https://github.com/squix78/json-streaming-parser.git
+[submodule "boards/AZSMZ_TFT_24/src/WU-esp8266-weather-station-color/lib/esp8266-weather-station"]
+	path = boards/AZSMZ_TFT_24/src/WU-esp8266-weather-station-color/lib/esp8266-weather-station
+	url = https://github.com/ThingPulse/esp8266-weather-station.git
+[submodule "boards/AZSMZ_TFT_24/src/WU-esp8266-weather-station-color/lib/simpleDSTadjust"]
+	path = boards/AZSMZ_TFT_24/src/WU-esp8266-weather-station-color/lib/simpleDSTadjust
+	url = https://github.com/neptune2/simpleDSTadjust.git
