@@ -19,7 +19,7 @@
 // Settings defined below
 
 #define WIFI_SSID      "NODES"
-#define WIFI_PASSWORD  "HappyNodes1234"
+#define WIFI_PASSWORD  "Password"
 
 
 /*********************************************************************************************/
@@ -43,7 +43,7 @@ const String units = "metric";
 
 // Sign up for a key and read API configuration info here:
 // https://openweathermap.org/, change x's to your API key
-const String api_key = "2ed662129fbbf659461701b8a6ca50f5";
+const String api_key = "***************************************";
 
 // Set the forecast longitude and latitude to at least 4 decimal places
 const String latitude =  "50.1336435"; // 90.0000 to -90.0000 negative for Southern hemisphere
