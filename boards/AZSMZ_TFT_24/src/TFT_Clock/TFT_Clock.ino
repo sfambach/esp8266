@@ -17,7 +17,7 @@
  Based on a sketch by Gilchrist 6/2/2014 1.0
  */
 
-#include <SPI.h>
+#include <SPI.h>                                                          
 #include <TFT_eSPI.h> // Hardware-specific library
 
 #define TFT_GREY 0x5AEB
