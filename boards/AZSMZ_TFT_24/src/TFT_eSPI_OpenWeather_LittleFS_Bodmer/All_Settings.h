@@ -31,7 +31,7 @@
 
 /*********************************************************************************************/
 
-#define TIMEZONE UK // See NTP_Time.h tab for other "Zone references", UK, usMT etc
+#define TIMEZONE euCET // See NTP_Time.h tab for other "Zone references", UK, usMT etc
 
 // Update every 15 minutes, up to 1000 request per day are free (viz average of ~40 per hour)
 const int UPDATE_INTERVAL_SECS = 15UL * 60UL; // 15 minutes
@@ -56,9 +56,9 @@ const String language = "de"; // Default language = en = English
 const String shortDOW [8] = {"???", "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
 
 // Change the labels to your language here:
-const char sunStr[]        = "Sonne";
-const char cloudStr[]      = "Woke";
-const char humidityStr[]   = "Feuchte";
+const char sunStr[]        = "Sonnig";
+const char cloudStr[]      = "Wolkig";
+const char humidityStr[]   = "Feucht";
 const String moonPhase [8] = {"New", "Waxing", "1st qtr", "Waxing", "Full", "Waning", "Last qtr", "Waning"};
 
 // End of user settings

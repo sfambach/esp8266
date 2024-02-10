@@ -14,9 +14,9 @@
 
 //  Original by Daniel Eichhorn, see license at end of file.
 
-#define SERIAL_MESSAGES // For serial output weather reports
+//#define SERIAL_MESSAGES // For serial output weather reports
 //#define SCREEN_SERVER   // For dumping screen shots from TFT
-#define RANDOM_LOCATION // Test only, selects random weather location every refresh
+//#define RANDOM_LOCATION // Test only, selects random weather location every refresh
 //#define FORMAT_LittleFS   // Wipe LittleFS and all files!
 
 // This sketch uses font files created from the Noto family of fonts as bitmaps
@@ -62,7 +62,8 @@
 
 
 // check All_Settings.h for adapting to your needs
-#include "All_Settings.h"
+// #include "All_Settings.h"
+#include "my_Settings.h" // create your own settings or use directly the All_Settings.h file
 
 #include <JSON_Decoder.h> // https://github.com/Bodmer/JSON_Decoder
 
@@ -123,8 +124,10 @@ bool tft_output(int16_t x, int16_t y, uint16_t w, uint16_t h, uint16_t* bitmap)
 ***************************************************************************************/
 void setup() {
   Serial.begin(115200);
-  pinMode(TFT_BL, OUTPUT);
-  digitalWrite(TFT_BL, LOW);
+  #if defined (TFT_BACKLIGHT_ON) && TFT_BACKLIGHT_ON == LOW
+    pinMode(TFT_BL, OUTPUT);
+    digitalWrite(TFT_BL, LOW);
+  #endif
 
 
   tft.init();
